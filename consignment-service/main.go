@@ -3,11 +3,11 @@ package main
 import (
 	// Import the generated protobuf code
 	"fmt"
+	pb "github.com/BasSyntactic/shippy/consignment-service/proto/consignment"
+	vesselProto "github.com/BasSyntactic/shippy/vessel-service/proto/vessel"
 	"github.com/micro/go-micro"
 	"golang.org/x/net/context"
 	"log"
-	pb "shippy/consignment-service/proto/consignment"
-	vesselProto "shippy/vessel-service/proto/vessel"
 )
 
 type Repository interface {

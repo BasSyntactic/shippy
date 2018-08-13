@@ -1,14 +1,14 @@
 package main
 
 import (
-	pb "shippy/consignment-service/proto/consignment"
-	"io/ioutil"
 	"encoding/json"
+	pb "github.com/BasSyntactic/shippy/consignment-service/proto/consignment"
+	microclient "github.com/micro/go-micro/client"
+	"github.com/micro/go-micro/cmd"
+	"golang.org/x/net/context"
+	"io/ioutil"
 	"log"
 	"os"
-	"golang.org/x/net/context"
-	"github.com/micro/go-micro/cmd"
-	microclient "github.com/micro/go-micro/client"
 )
 
 const (
